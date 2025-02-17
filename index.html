@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNF Cilibri PWA</title>
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log('Service Worker u regjistrua!'))
+                .catch((error) => console.log('Gabim në regjistrim:', error));
+        }
+    </script>
+</head>
+<body>
+    <h1>Mirësevini në PNF Cilibri PWA</h1>
+    <p>Kjo është një faqe për të mbështetur Google Sites si një PWA.</p>
+</body>
+</html>
